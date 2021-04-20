@@ -20,14 +20,13 @@ h2{
 #conteneur-id{
   width:100%;
 }
+#conteneur-menu{
 
-
-
-
+}
 .menu{
   width:100%;
   background-color:white;
-  box-shadow: 2px 2px 12px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 4px 4px 12px 4px rgba(0, 0, 0, 0.2);
   margin:auto;
   text-align:center;
   position:fixed;
@@ -45,16 +44,18 @@ h2{
 .menu a{
   text-decoration:none;
   color:black;
-  background-color:#DDD;
+ 
   transition:0.4s;
   padding:5px 25px;
 }
 .menu a:hover{
   text-decoration:none;
-  color:#999;
-  background-color:#FFF;
-  transition:0.4s;
+  color:white;
+  
+  transition:0.2s;
 }
+
+
 /*HOME*/
 #conteneur-home{
   width:100%;
@@ -129,22 +130,23 @@ text-align:justify;
   color:#999;
   border:1px solid #999;
   background-color:#FFF;
-  transition:0.4s;
+  transition:0.1s;
 }
 /*SKILLS*/
 #conteneur-skills{
-  padding:100px 10px;
+  padding:70px 10px;
   background-color:#EEE;
 }
 .skills{
-  max-width:500px;
-  width:80%;
-  margin:auto;
+  max-width:400px;
+  width:30%;
+  font-size: x-small;
+  margin:10px 300px ;
 }
 .title h2{
-  padding-bottom:25px;
-  font-size:25px;
-  font-weight:150;
+  padding-top: 300px;
+  font-size:20px;
+  font-weight:bold;  
   text-align:center;
   text-transform:uppercase;
   color: rgba(0,0,0,0.75);}
@@ -155,24 +157,24 @@ width:100%;
 margin:auto;
 }
 .bardiv{
-  width:70%;
+  width:90%;
   margin:auto;
 }
 .bardiv h3{
-  font-size:20px;
-  padding-bottom:5px;
+  font-size: large;
+  padding-bottom:30px;
   color: rgba(0,0,0,0.75);
 }
 .progressbar{
-  width:100%;
+  width:120%;
   margin:auto;
-  height:5px;
+  height:10px;
   background-color:#AAA;
   position:relative;
-  margin-bottom:15px;
+  margin-bottom:5px;
 }
 .progressbar span{
-  height:5px;
+  height:10px;
   background-color:#000;
   z-index:888;
   position:absolute;
@@ -186,13 +188,13 @@ margin:auto;
   width:90%;
 }
 .javascript{
-  width:45%;
+  width:65%;
 }
 .php{
   width:70%;
 }
 .sql{
-  width:60%;
+  width:65%;
 }
 /*DIPLOMA*/
 #conteneur-qualification{
@@ -298,16 +300,16 @@ margin:auto;
   font-weight:100;
 }
 .text-miniature h4{
-  font-size:18px;
+  font-size:10px;
   color:#666;
-  line-height:25px;
-  font-weight:100;
+  line-height:20px;
+  font-weight:80;
 }
 .text-miniature h5{
   font-size:15px;
   color:#999;
-  line-height:20px;
-  font-weight:100;
+  line-height:10px;
+  font-weight:80;
 }
 .conteneur-miniature-one:hover{
   box-shadow:0 0 20px 1px rgba(0,0,0,0.75);
