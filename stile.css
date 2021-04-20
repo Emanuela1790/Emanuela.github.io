@@ -3,11 +3,16 @@ html, body{
   padding:0px;
   width:100%;
   font-size:15px;
-  font-family:century gothic;
+  font-family:Georgia, 'Times New Roman', Times, serif;
 }
-div, p, h1, h2, h3, h4, h5, ul, li, a, span{
+div, p, h1,  h3, h4, h5, ul, li, a, span{
   margin:0px;
   padding:0px;
+}
+h2{
+  color: #337ab7;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: small;
 }
 .clear{
   clear:both;
@@ -15,10 +20,9 @@ div, p, h1, h2, h3, h4, h5, ul, li, a, span{
 #conteneur-id{
   width:100%;
 }
-/*MENU*/
-#conteneur-menu{
 
-}
+
+
 .menu{
   width:100%;
   background-color:white;
@@ -90,15 +94,15 @@ div, p, h1, h2, h3, h4, h5, ul, li, a, span{
   width:90%;
 }
 .profil-text{
-  width:50%;
+  width:30%;
   float:left;
   position:relative;
 }
 .profil-text h2{
-  padding-bottom:15px;
-  font-size:25px;
-  font-weight:100;
-  text-transform:uppercase;
+  padding-bottom:10px;
+  font-size:15px;
+  font-weight:50;
+  
 }
 .profil-text p{
 padding-bottom:75px;
