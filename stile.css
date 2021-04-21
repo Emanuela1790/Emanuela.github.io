@@ -132,6 +132,7 @@ text-align:justify;
   background-color:#FFF;
   transition:0.1s;
 }
+
 /*SKILLS*/
 #conteneur-skills{
   padding:70px 10px;
@@ -150,49 +151,52 @@ text-align:justify;
   text-align:center;
   text-transform:uppercase;
   color: rgba(0,0,0,0.75);}
-.title p{
-padding-bottom:75px;
-text-align:justify;
-width:100%;
-margin:auto;
-}
-.bardiv{
-  width:90%;
-  margin:auto;
-}
-.bardiv h3{
-  font-size: large;
-  padding-bottom:10px;
-  color: rgba(0,0,0,0.75);
-}
-.progressbar{
-  width:120%;
-  margin:auto;
-  height:10px;
-  background-color:#AAA;
-  position:relative;
-  margin-bottom:5px;
-}
-.progressbar span{
-  height:10px;
-  background-color:#000;
-  z-index:888;
-  position:absolute;
-  top:0px;
-  left:0px;
-}
-.html{
-  width:80%;
-}
-.css{
-  width:90%;
-}
-.javascript{
-  width:65%;
-}
-.php{
-  width:70%;
-}
+  .title p{
+    padding-bottom:75px;
+    text-align:justify;
+    width:100%;
+    margin:auto;
+  }
+  .bardiv{
+    width:90%;
+    margin:auto;
+  }
+  .bardiv h3{
+    font-size: large;
+    padding-bottom:10px;
+    color: rgba(0,0,0,0.75);
+  }
+  .progressbar{
+    width:120%;
+    margin:auto;
+    height:10px;
+    background-color:#AAA;
+    position:relative;
+    margin-bottom:5px;
+    border-radius: 25px;
+  }
+  .progressbar span{
+    height:10px;
+    background-color:#337ab7;
+    z-index:888;
+    position:absolute;
+    top:0px;
+    left:0px;
+    border-radius: 25px;
+  }
+  .html{
+    width:80%;
+  }
+  .java{
+    width:90%;
+  }
+  .css{
+    width:65%;
+  }
+  .c{
+    width:70%;
+  }
+  
 .sql{
   width:65%;
 }
