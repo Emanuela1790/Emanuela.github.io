@@ -343,7 +343,7 @@ text-align:justify;
   transform: scaleX(-1);
   background-size:cover;
   border-radius: 150px;
-  box-shadow: 10px 10px  rgb(10, 10, 10);
+  box-shadow: 10px 10px  rgb(7, 7, 7);
 }
 .contact{
   max-width:660px;
