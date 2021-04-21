@@ -345,7 +345,6 @@ text-align:justify;
   border-radius: 150px;
   box-shadow: 10px 10px  rgb(10, 10, 10);
 }
-
 .contact{
   max-width:660px;
   width:100%;
@@ -391,7 +390,6 @@ input[type="email"], input[type="text"],  textarea{
   color:#fff;
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
-
 }
 textarea{
 	min-height:80px;
