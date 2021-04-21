@@ -435,6 +435,7 @@ input[type="submit"]:hover{
   padding-right: 10px;
   font-size: 15px;
 }
+
 .footer a:hover{
   color:rgb(8, 8, 8);
   text-decoration:none;
