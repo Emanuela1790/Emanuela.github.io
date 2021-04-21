@@ -50,7 +50,7 @@ h2{
 }
 .menu a:hover{
   text-decoration:none;
-  color:white;
+  
   
   transition:0.2s;
 }
@@ -170,14 +170,14 @@ text-align:justify;
     width:120%;
     margin:auto;
     height:10px;
-    background-color:#AAA;
+    background-color:black;
     position:relative;
     margin-bottom:5px;
     border-radius: 25px;
   }
   .progressbar span{
     height:10px;
-    background-color:#2a6fac;
+    
     z-index:888;
     position:absolute;
     top:0px;
@@ -186,20 +186,127 @@ text-align:justify;
   }
   .html{
     width:80%;
+    background-color:#ff751a;
   }
   .java{
     width:90%;
+    background-color:#ff1a1a;
   }
   .css{
     width:65%;
+    background-color:#1a8cff;
   }
   .c{
-    width:70%;
+    width:75%;
+    background-color: #990073;
   }
   
-.sql{
-  width:65%;
+  .sql{
+    width:75%;
+    background-color: #000099;
+
+    
 }
+
+body {
+  font: 13px/20px "Lucida Grande", Tahoma, Verdana, sans-serif;
+  color: #404040;
+  background: #2a2a2a;
+}
+
+.container {
+  margin: 60px auto;
+  width: 400px;
+  text-align: center;
+}
+
+.container .progress {
+  margin: 0 auto;
+  width: 400px;
+}
+
+.progress {
+  padding: 4px;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.progress-bar {
+  height: 16px;
+  border-radius: 4px;
+	background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  -webkit-transition: 0.4s linear;
+  -moz-transition: 0.4s linear;
+  -o-transition: 0.4s linear;
+  transition: 0.4s linear;
+  -webkit-transition-property: width, background-color;
+  -moz-transition-property: width, background-color;
+  -o-transition-property: width, background-color;
+  transition-property: width, background-color;
+  -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
+}
+
+/*
+ * Note: using adjacent or general sibling selectors combined with
+ *       pseudo classes doesn't work in Safari 5.0 and Chrome 12.
+ *       See this article for more info and a potential fix:
+ *       https://css-tricks.com/webkit-sibling-bug/
+ */
+
+#five:checked ~ .progress > .progress-bar {
+  width: 5%;
+  background-color: #f63a0f;
+}
+
+#twentyfive:checked ~ .progress > .progress-bar {
+  width: 25%;
+  background-color: #f27011;
+}
+
+#fifty:checked ~ .progress > .progress-bar {
+  width: 50%;
+  background-color: #f2b01e;
+}
+
+#seventyfive:checked ~ .progress > .progress-bar {
+  width: 75%;
+  background-color: #f2d31b;
+}
+
+#onehundred:checked ~ .progress > .progress-bar {
+  width: 100%;
+  background-color: #86e01e;
+}
+
+.radio {
+  display: none;
+}
+
+.label {
+  display: inline-block;
+  margin: 0 5px 20px;
+  padding: 3px 8px;
+  color: #aaa;
+  text-shadow: 0 1px black;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.radio:checked + .label {
+  color: white;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+
+
+
+
 /*DIPLOMA*/
 #conteneur-qualification{
   padding:100px 0px;
@@ -322,14 +429,19 @@ text-align:justify;
 /*CONTACT*/
 #conteneur-contact{
   padding:100px 0px;
-  background:url(https://images.unsplash.com/38/awhCbhLqRceCdjcPQUnn_IMG_0249.jpg?w=1867&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D) fixed 100% no-repeat;
+  background:url(https://images.unsplash.com/photo-1584949091598-c31daaaa4aa9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80) fixed 100% no-repeat;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
   background-size:cover;
 }
+
 .contact{
   max-width:660px;
   width:100%;
   margin:auto;
   text-align:center;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 .contact h2{
   padding-bottom:50px;
@@ -337,21 +449,25 @@ text-align:justify;
   font-weight:100;
   text-transform:uppercase;
   color:#FFF;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 .input h3{
 	margin-top:15px;
-	margin-bottom:10px;
+	margin-bottom:7px;
 	color:#fff;
-	font-size:17px;
+	font-size:15px;
   font-weight:100;
-  text-align:left;
+  text-align:center;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 .input textarea{
-	margin-bottom:15px;
+	margin-bottom:10px;
 }
 input[type="email"], input[type="text"],  textarea{
-	height:25px;
-	width:100%;
+	height:20px;
+	width:80%;
 	padding:2.5px 8px;
 	background-color:rgba(0,0,0,0.4);
 	border:none;
@@ -361,16 +477,17 @@ input[type="email"], input[type="text"],  textarea{
 	border-radius:0;
 	outline:none;
   color:#fff;
+
 }
 textarea{
-	min-height:150px;
-	max-height:150px;
+	min-height:80px;
+	max-height:80px;
 	max-width:100%;
 	max-width:100%;
 }
 input[type="submit"]{
 	font-size:17px;
-	width:100%;
+	width:80%;
 	display:inline-block;
 	height:25px;
 	padding:0 30px;
@@ -387,6 +504,8 @@ input[type="submit"]{
 	color:white;
 	background-color:rgba(0,0,0,0.5);
 	transition:0.4s;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 input[type="submit"]:hover{
 	background-color:#FFF;
@@ -395,16 +514,18 @@ input[type="submit"]:hover{
 	transition:0.4s;
 }
 #conteneur-footer{
-  padding:10px 0px;
+  padding:10px 1px;
   background-color:#000;
   color:#FFF;
-  text-align:center;
+  text-align:right;
 }
 .footer a{
   color:#FFF;
   text-decoration:none;
   padding-top:50px;
   transition:0.4s;
+  padding-right: 10px;
+  font-size: 15px;
 }
 .footer a:hover{
   color:#DDD;
