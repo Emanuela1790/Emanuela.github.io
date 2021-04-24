@@ -136,7 +136,7 @@ text-align:justify;
 
 /*SKILLS*/
 #conteneur-skills{
-  padding:100px 10px;
+  padding:90px 10px;
   background-color:#EEE;
   
 }
@@ -144,7 +144,7 @@ text-align:justify;
   max-width:400px;
   width:30%;
   font-size: x-small;
-  margin:10px 300px ;
+  margin:10px 200px ;
 }
 .title h2{
   padding-top: 300px;
@@ -153,62 +153,90 @@ text-align:justify;
   text-align:center;
   text-transform:uppercase;
   color: midnightblue;}
-  .title p{
-    padding-bottom:75px;
-    text-align:justify;
-    width:100%;
-    margin:auto;
-  }
-  .bardiv{
-    width:90%;
-    margin:auto;
-  }
-  .bardiv h3{
-    font-size: large;
-    padding-bottom:10px;
-    color: rgba(0,0,0,0.75);
-  }
-  .progressbar{
-    width:120%;
-    margin:auto;
-    height:10px;
-    background-color:black;
-    position:relative;
-    margin-bottom:5px;
-    border-radius: 10px 10px 10px 10px;
-  }
-  .progressbar span{
-    height:10px;
-    
-    z-index:888;
-    position:absolute;
-    top:0px;
-    left:0px;
-    border-radius: 25px;
-  }
-  .html{
-    width:80%;
-    background-color:#ff751a;
-  }
-  .java{
-    width:90%;
-    background-color:#ff1a1a;
-  }
-  .css{
-    width:65%;
-    background-color:#1a8cff;
-  }
-  .c{
-    width:75%;
-    background-color: #990073;
+ 
+  
+  .progress {
+    background: rgba(255,255,255,0.1);
+    justify-content: 575%;
+    border-radius: 80px;
+    align-items: center;
+    position: relative;
+    padding: 0 5px;
+    display: flex;
+    height: 30px;
+    width: 500px;
   }
   
-  .sql{
-    width:75%;
-    background-color: #000099;
-
+  .progress-java {
+    animation: load1 2s normal forwards;
+    box-shadow: 0 10px 40px -10px rgb(12, 11, 11);
+    border-radius: 100px;
+    background: rgb(207, 16, 16);
+    height: 20px;
+    width: 0;
     
-}
+  }
+  .progress-c {
+    animation: load1 3s normal forwards;
+    box-shadow: 0 10px 40px -10px rgb(12, 12, 14);
+    border-radius: 100px;
+    background: rgb(133, 19, 209);
+    height: 20px;
+    width: 0;
+  }.progress-html {
+    animation: load2 3s normal forwards;
+    box-shadow: 0 10px 40px -10px rgb(12, 12, 14);
+    border-radius: 100px;
+    background: rgb(250, 133, 23);
+    height: 20px;
+    width: 0;
+  }.progress-css {
+    animation: load4 3s normal forwards;
+    box-shadow: 0 10px 40px -10px rgb(12, 12, 14);
+    border-radius: 100px;
+    background: rgb(30, 146, 201);
+    height: 20px;
+    width: 0;
+  }.progress-mysql {
+    animation: load3 3s normal forwards;
+    box-shadow: 0 10px 40px -10px rgb(12, 12, 14);
+    border-radius: 100px;
+    background: rgb(14, 3, 117);
+    height: 20px;
+    width: 0;
+  }.progress-spring {
+    animation: load3 3s normal forwards;
+    box-shadow: 0 10px 40px -10px rgb(12, 12, 14);
+    border-radius: 100px;
+    background: rgb(9, 194, 34);
+    height: 20px;
+    width: 0;
+  }
+  .label{
+      font-size: 25px;
+      margin: 25px;
+      color: midnightblue;
+      font-family: Minion Pro;
+      font-weight:  bold;
+  }
+  
+  @keyframes load1 {
+    0% { width: 0; }
+    100% { width: 85%; }
+  }
+  @keyframes load2 {
+    0% { width: 0; }
+    100% { width: 75%; }
+  }
+  @keyframes load3 {
+    0% { width: 0; }
+    100% { width: 70%; }
+  }
+  @keyframes load4 {
+    0% { width: 0; }
+    100% { width: 60%; }
+  }
+ 
 /*DIPLOMA*/
 #conteneur-qualification{
   padding:100px 0px;
